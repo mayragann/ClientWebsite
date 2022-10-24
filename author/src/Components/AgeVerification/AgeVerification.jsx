@@ -1,12 +1,21 @@
 import React, {useState} from 'react';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import { useNavigate } from "react-router-dom";
 
 
-function AgeVerification() {
+const AgeVerification = () => {
     const [show, setShow] = useState(true);
-
-    const handleClose = () => setShow(false);
+    const navigate = useNavigate()
+   
+    function handleCloseButton(){
+      navigate("/")
+      setShow(false)
+    }
+    function handleCloseButtonUnderAge(){
+      navigate("/NotOldEnough")
+      setShow(false)
+    }
 
 
 
@@ -15,7 +24,7 @@ function AgeVerification() {
 
 
             <Modal show={show}
-                onHide={handleClose}
+             
                 backdrop="static"
                 keyboard={true}>
                 <Modal.Header closeButton></Modal.Header>
@@ -24,11 +33,11 @@ function AgeVerification() {
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary"
-                        onClick={handleClose}>
+                        onClick={handleCloseButton}>
                         Over 18
                     </Button>
                     <Button variant="primary"
-                        >Not Over 18</Button>
+                        onClick={handleCloseButtonUnderAge}>Not Over 18</Button>
                 </Modal.Footer>
             </Modal>
         </>
