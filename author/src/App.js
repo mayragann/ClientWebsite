@@ -8,10 +8,14 @@ import AgeVerification from "./Components/AgeVerification/AgeVerification";
 import NotOldEnough from "./Pages/NotOldEnough/NotOldenough";
 import Home from "./Pages/Home/Home";
 
+//Components
+import Navbar from "./Components/Navbar/Navbar";
+
 function App() {
   return (
     <div className="App">
       <AgeVerification />
+      <Navbar />
       <Routes>
         <Route path="/NotOldEnough" element={<NotOldEnough />} />
         <Route path="/" element={<Home />} />
