@@ -7,7 +7,7 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 const NavbarHeader = () => {
   return (
-<Navbar className='navbar-custom' expand="lg" sticky="top"   >
+<Navbar className='navbar-custom' expand="lg" >
       <Container fluid >
         <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />

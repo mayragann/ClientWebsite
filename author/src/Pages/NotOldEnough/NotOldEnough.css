@@ -1,0 +1,26 @@
+
+  
+  .background {
+    /* The image used */
+    background-image: url("./../../img/background.jpg");
+  
+    /* Full height */
+    height: 94vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+  }
+
+
+
+.center-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  
+  }
