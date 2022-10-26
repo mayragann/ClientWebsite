@@ -27,7 +27,7 @@ const AgeVerification = () => {
              
                 backdrop="static"
                 keyboard={true}>
-                <Modal.Header closeButton></Modal.Header>
+                
                 <Modal.Body>
                     You must be at least 18 to enter
                 </Modal.Body>
