@@ -9,13 +9,13 @@ import NotOldEnough from "./Pages/NotOldEnough/NotOldenough";
 import Home from "./Pages/Home/Home";
 
 //Components
-import NavbarHeader from "./Components/Navbar/Navbar";
+
 
 function App() {
   return (
     <div className="App">
       <AgeVerification />
-      <NavbarHeader />
+  
       <Routes>
         <Route path="/NotOldEnough" element={<NotOldEnough />} />
         <Route path="/" element={<Home />} />
